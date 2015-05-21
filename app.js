@@ -2,7 +2,7 @@
 
 var scheduleApp = angular.module('scheduleApp', ['firebase']);
 
-scheduleApp.controller('mainController', ['$scope', function($scope, $firebase) {
+scheduleApp.controller('mainController', ['$scope', '$firebase', function($scope, $firebase) {
 	
 	// connect to firebase
 	var ref = new Firebase("https://fiery-torch-6995.firebaseIO.com/days");
