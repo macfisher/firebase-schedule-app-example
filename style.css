@@ -27,7 +27,7 @@
 	animation: flashAvailable 0.5s ease;
 }
 
-/* animation for time slot - flash red */
+/* animation for time slot - flash RED */
 @keyframes flashBooked {
 	0%, 100% {
 		background: #f2dede;
@@ -36,6 +36,19 @@
 	
 	50% {
 		background: #F99090;
+		transform: scale(1.5);
+	}
+}
+
+/* animation for time slot - flash GREEN */
+@keyframes flashAvailable {
+	0%, 100% {
+		background: #6AB074;
+		transform: scale(1);
+	}
+	
+	50% {
+		background: rgb(119, 218, 78);
 		transform: scale(1.5);
 	}
 }
